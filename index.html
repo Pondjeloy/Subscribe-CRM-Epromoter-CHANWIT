@@ -917,9 +917,11 @@ const CRM_BUILD       = '5 ก.ค. 69 v7';
 const LOGIN_PASSWORD    = 'chanwit1234';
 const LOGIN_SESSION_KEY = 'lgCrmLoggedIn_chanwit';
 const API_URL_KEY       = 'lgCrmApiUrl_chanwit';
-const CACHE_KEY         = 'lgCrmCache_chanwit';
+const CACHE_KEY         = 'lgCrmCache_chanwit_v7';
 const HL_KEY            = 'lgDashHL_chanwit';
 const PROMOTER          = 'CHANWIT';
+const SOURCE_ALIASES    = {'Meta Densu':'Meta Densu July','Meta Credit':'Meta Credit July'};
+function normalizeSource(src) { return SOURCE_ALIASES[src] || src || ''; }
 const CACHE_TTL         = 30 * 60 * 1000; // 30 min
 
 function app() {
